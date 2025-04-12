@@ -16,6 +16,7 @@ A Python tool to convert GEBCO bathymetry data from NetCDF format to XYZ format 
    
 3. Install requirements:
 >> pip install -r requirements.txt
+(If errors occur, use Anaconda instead: conda install -c conda-forge netcdf4 numpy)
 
 ## Usage
 Basic conversion (only negative/depth values):
