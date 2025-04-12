@@ -11,10 +11,19 @@ A Python tool to convert GEBCO bathymetry data from NetCDF format to XYZ format 
 ## Installation
 
 1. Clone this repository:
-   git clone https://github.com/yourusername/gebco-to-xyz.git
-   cd gebco-to-xyz
+>> git clone https://github.com/yourusername/gebco-to-xyz.git
+>> cd gebco-to-xyz
    
 3. Install requirements:
-   pip install -r requirements.txt
+>> pip install -r requirements.txt
 
-   
+## Usage
+Basic conversion (only negative/depth values):
+>> python -m gebco_to_xyz.converter input.nc output.xyz
+
+Include all elevation values (positive and negative):
+>> python -m gebco_to_xyz.converter input.nc output.xyz --include-positive
+## Requirements
+Python 3.6+
+netCDF4
+numpy
